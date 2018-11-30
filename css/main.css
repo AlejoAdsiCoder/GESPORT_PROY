@@ -1,0 +1,27 @@
+body {
+    background-image: url(../img/bg_reserva.jpeg);
+    
+}
+
+div.main {
+    background: rgba(0, 0, 0, 0.6);
+    height: auto;
+    color: white;
+}
+
+div.side {
+    background: rgba(0, 0, 0, 0.6);
+    height: 550px;
+    color: white;
+}
+
+select.form-control, input.form-control, textarea.form-control {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    outline: none;
+}
+
+select.form-control:focus, input.form-control:focus, textarea.form-control:focus {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+}

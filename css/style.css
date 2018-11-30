@@ -1,0 +1,33 @@
+.navbar .nav-item .nav-link {
+    color: white;
+}
+
+.background {
+    position: relative;
+    background: url(../img/background.jpg);
+    background-size: cover;
+    min-height: 600px;
+}
+
+.overlay {
+    position: absolute;
+    background: rgba(46, 74, 97, 0.63);
+    width: 100%;
+    height: 100%;
+}
+
+.header-content-left {
+    margin-top: 90px;
+}
+
+.list-group-item i {
+  padding-right: 6px;
+}
+
+.header-content-right {
+    padding: 20px;
+}
+
+img.card-img-top {
+  height: 194px;
+}

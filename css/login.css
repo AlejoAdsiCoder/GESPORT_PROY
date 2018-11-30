@@ -1,0 +1,15 @@
+body {
+  font-family: 'Nanum Gothic', sans-serif;
+  background-image: url(../img/login2.jpeg);
+  color: #fff;
+  background-attachment: fixed;
+}
+#main {
+  background: #fff;
+  color: #000;
+  border: 4px solid #ccc;
+  width: 720px;
+  height: auto;
+  padding: 80px;
+
+}
