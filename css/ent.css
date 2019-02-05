@@ -1,12 +1,21 @@
 body {
-    background-image: url(../img/bg_reserva.jpeg);
-    
+    background-image: url(../img/ent.jpeg);
+    color: white;
+}
+h2 {
+    text-align: center;
+}
+
+.col-md-8 {
+    margin: 0 auto;
 }
 
 div.main {
     background: rgba(0, 0, 0, 0.6);
     height: auto;
     color: white;
+    padding: 35px;
+    
 }
 
 div.side {

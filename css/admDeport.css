@@ -1,0 +1,44 @@
+body {
+    background-image: url(../img/bg_reserva.jpeg);
+    color: white;
+}
+h2 {
+    text-align: center;
+}
+
+.col-md-4 {
+    display: inline-block;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.col-md-8 {
+}
+
+div.main {
+    background: rgba(0, 0, 0, 0.6);
+    height: auto;
+    color: white;
+}
+
+div.side {
+    background: rgba(0, 0, 0, 0.6);
+    height: 550px;
+    color: white;
+    padding: 0px;
+}
+
+select.form-control, input.form-control, textarea.form-control {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    outline: none;
+}
+
+select.form-control:focus, input.form-control:focus, textarea.form-control:focus {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+th {
+    padding: 0;
+}

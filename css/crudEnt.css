@@ -1,0 +1,11 @@
+div.main {
+  color: white;
+  background: rgba(0, 0, 0, 0.6); }
+  div.main select.form-control {
+    background: rgba(0, 0, 0, 0.8);
+    color: white; }
+  div.main input.form-control {
+    background: rgba(0, 0, 0, 0.8);
+    color: white; }
+
+/*# sourceMappingURL=crudEnt.css.map */

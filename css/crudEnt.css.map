@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,QAAS;EACL,KAAK,EAAE,KAAK;EAEZ,UAAU,EAAE,kBAAkB;EAC9B,4BAAoB;IAChB,UAAU,EAAE,kBAAkB;IAC9B,KAAK,EAAE,KAAK;EAEhB,2BAAmB;IACf,UAAU,EAAE,kBAAkB;IAC9B,KAAK,EAAE,KAAK",
+"sources": ["../scss/crudEnt.scss"],
+"names": [],
+"file": "crudEnt.css"
+}

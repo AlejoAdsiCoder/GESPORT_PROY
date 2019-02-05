@@ -1,6 +1,6 @@
 <?php
 
-  $database ="sysgesport";
+  $database ="proygesport";
   $usuario = "root";
   $hostname = "127.0.0.1";
   $pass = "";
