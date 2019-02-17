@@ -9,10 +9,12 @@
     <title>Document</title>
 </head>
 <body>
+    <?php include('php/navAdmin.php') ?>
     <h2>Entrenador</h2>
     <div class="container-fluid">
-    <div class="row">
-    <div class="main col-md-4">
+    
+    <!---<div class="main col-md-4">
+        
         
         <form action="">
                 <div class="row">
@@ -71,7 +73,8 @@
                     
                     <button class="btn btn-primary">Registrar</button>
         </form>
-    </div>
+    </div>-->
+    <div class="container">
     <div class="side col-md-8">
         <table class="table table-sm">
             <thead class="thead-dark">
