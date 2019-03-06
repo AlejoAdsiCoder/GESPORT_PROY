@@ -3,17 +3,25 @@ $(document).ready(function() {
     $("#escenario").change(function() {
         var id = $(this).find(":selected").val();
         var dataString = "esc=" + id;
-        console.log(dataString);
         $.ajax({
-            type: 'POST',
-            url: "./php/getDetalles.php",
-            dataType: "json",
-            data: dataString,
-            cache: false,
+//            type: 'POST',
+            url: "php/getDetalles.php?" + dataString,
+//            dataType: "json",
+//            data: dataString,
+//            cache: false,
             success: function (escData) {
                 if(escData) {
-                    console.log(escData);
+                    var datos = JSON.parse(escData);
+                    alert(escData);
+                    alert(datos[0].dia);
+                    for(i = 0; i < datos.length; i++) {
+                        if(datos[i].dia == "lunes"){
+                            $("#lun").html("<li>" + datos[i].hora_inicio + "</li><li>" + datos[i].hora_fin);
+                        }
+                    }
                 }
+                else
+                alert("Nanay");
             }
         });
     });

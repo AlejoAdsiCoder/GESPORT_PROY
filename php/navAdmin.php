@@ -19,28 +19,21 @@
       </div>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="clubes" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Escenarios Deportivos</a>
+        <a class="nav-link dropdown-toggle" href="#" id="Esd" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Escenarios Deportivos</a>
       
-      <div class="dropdown-menu" aria-labelledby="clubes">
+      <div class="dropdown-menu" aria-labelledby="Esd">
         <a class="dropdown-item" href="#">Administrar</a>
         <a class="dropdown-item" href="#">Añadir</a>
       </div>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="clubes" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Deportistas</a>
+        <a class="nav-link dropdown-toggle" href="#" id="dep" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Deportistas</a>
       
-      <div class="dropdown-menu" aria-labelledby="clubes">
+      <div class="dropdown-menu" aria-labelledby="dep">
         <a class="dropdown-item" href="#">Administrar</a>
         <a class="dropdown-item" href="#">Añadir</a>
       </div>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-        <div class="dropdown-menu" aria-labelledby="dropdown04">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
+      
     </ul>
     <form class="form-inline my-2 my-md-0">
       <input class="form-control" type="text" placeholder="Search">
