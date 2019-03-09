@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.8.0
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 11-01-2019 a las 06:50:28
--- Versión del servidor: 10.1.37-MariaDB
--- Versión de PHP: 7.2.12
+-- Tiempo de generación: 09-03-2019 a las 21:54:34
+-- Versión del servidor: 10.1.31-MariaDB
+-- Versión de PHP: 5.6.35
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -181,8 +181,8 @@ CREATE TABLE `horario` (
 --
 
 INSERT INTO `horario` (`id`, `dia`, `jornada`, `hora_inicio`, `hora_fin`, `escenario_id`) VALUES
-(1, 'lunes', 'mañana', '09:00:00', '11:00:00', 1),
-(2, 'miercoles', 'mañana', '06:00:00', '12:00:00', 2),
+(1, 'lunes', 'manana', '09:00:00', '11:00:00', 1),
+(2, 'miercoles', 'manana', '06:00:00', '12:00:00', 2),
 (3, 'viernes', 'tarde', '13:00:00', '18:00:00', 3);
 
 -- --------------------------------------------------------
