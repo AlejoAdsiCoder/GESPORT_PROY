@@ -1,9 +1,9 @@
 <?php
 
-  $database ="proygesport";
+  $database ="gesport";
   $usuario = "root";
-  $hostname = "127.0.0.1";
-  $pass = "";
+  $hostname = "localhost:8889";
+  $pass = "root";
 
   $con = new mysqli($hostname, $usuario, $pass, $database);
 

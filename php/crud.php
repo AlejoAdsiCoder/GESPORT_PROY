@@ -2,15 +2,15 @@
   class Crud
   {
     require_once "conexion.php";
-    public function crearEvento($id, $nombre, $descripcion, $estado, $fechaini, $fechafin, $idescenario, $identrenador) {
+    public function crearEvento($id, $clubid, $escenarioid, $descripcion, $fechaini, $fechafin, $estado) {
       try {
 
         //echo $id . "<br>" . $nombre . "<br>" . $descripcion . "<br>" . $estado . "<br>" . $fechaini . "<br>" . $fechafin . "<br>" . $idescenario . "<br>" . $identrenador;
 
-        $cek = mysqli_query($con, "SELECT * FROM evento WHERE id ='$id'");
+        $cek = mysqli_query($con, "SELECT * FROM reserva WHERE id ='$id'");
 				if(mysqli_num_rows($cek) == 0){
-						$insert = mysqli_query($con, "INSERT INTO evento(id, nombre_actividad, descripcion, estado, fecha_hora_inicio, fecha_hora_fin, escenario_id, usuario_cedula)
-															VALUES('$id', '$nombre', '$descripcion', '$estado', '$fechaini', '$fechafin', '$idescenario', '$identrenador')") or die(mysqli_error($con));
+						$insert = mysqli_query($con, "INSERT INTO evento(id, club_id, escenario_id, descripcion, fecha_hora_inicio, fecha_hora_fin, estado)
+															VALUES('$id', '$clubid', '$escenarioid', '$descripcion', '$fechaini', '$fechafin', '$estado')") or die(mysqli_error($con));
 						if($insert){
 							echo '<div class="alert alert-success alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>Bien hecho! Los datos han sido guardados con éxito.</div>';
 						}else{
@@ -48,5 +48,15 @@
       }else{
         $sql = mysqli_query($con, "SELECT * FROM evento ORDER BY idEvento ASC");
       }
+    }
+
+    public function listEntrenador() {
+      $list = mysqli_query($con, "SELECT * FROM reserva") or die(mysqli_error($con));
+
+      $data = array();
+        while($rows = mysqli_fetch_assoc($list)) {
+            $data[] = $rows;
+        }
+        echo json_encode($data);
     }
   }

@@ -25,4 +25,27 @@ $(document).ready(function() {
             }
         });
     });
+
+    $("#click").click(function() {
+        var id = $("#id").val();
+        var escenario = $("#escenario").val();
+        var club = $("#club").val();
+        var descripcion = $("#descripcion").val();
+        var fh_inicio = $("#fecha_hora_inicio").val();
+        var fh_fin = $("#fecha_hora_fin").val();
+        var estado = $('#estado').val();
+
+        $.ajax({
+            type: 'POST',
+            url: 'php/scriptevento.php',
+            data: {id:id, escenario:escenario, club:club, descripcion:descripcion, fh_inicio:fh_inicio, fh_fin:fh_fin, estado:estado},
+        }).done(function(data) {
+            alert( "success" );
+        });
+        /*
+        $.post("../php/scriptevento.php", {id:id, escenario:escenario, club:club, descripcion:descripcion, fh_inicio:fh_inicio, fh_fin:fh_fin, estado:estado}).done(function(data) {
+            alert( "Datos cargados: " + data );
+        });
+        */
+    });
 });
